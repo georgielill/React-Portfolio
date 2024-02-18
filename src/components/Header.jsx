@@ -3,17 +3,17 @@ import Nav from 'react-bootstrap/Nav';
 function Header() {
   return (
     <Nav
-      activeKey="/home"
+      activeKey="/Homepage"
       onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
     >
       <Nav.Item>
-        <Nav.Link href="/home">Home</Nav.Link>
+        <Nav.Link href="/Homepage">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-2">Projects</Nav.Link>
+        <Nav.Link eventKey="/Projects">Projects</Nav.Link>
       </Nav.Item>
             <Nav.Item>
-        <Nav.Link eventKey="link-3">Contact</Nav.Link>
+        <Nav.Link eventKey="/Contact">Contact</Nav.Link>
       </Nav.Item>
     </Nav>
   );
